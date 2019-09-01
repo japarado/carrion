@@ -1,6 +1,6 @@
 <?php 
 
-namespace App\Traits;
+namespace Carrion\Traits;
 
 trait HasArgsAccessors
 {

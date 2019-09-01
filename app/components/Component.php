@@ -1,5 +1,5 @@
 <?php 
-namespace App\Components;
+namespace Carrion\Components;
 
 abstract class Component 
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Constructs;
+namespace Carrion\Constructs;
 
 abstract class Enum
 {

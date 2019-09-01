@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Components;
+namespace Carrion\Components;
 
-use App\Components\Component;
-use App\Components\PostType;
+use Carrion\Components\Component;
+use Carrion\Components\PostType;
 
 /**
  * Base Metabox class. Most of the class properties match the arguments from the native WordPress

@@ -1,9 +1,9 @@
 <?php 
-namespace App\Components;
+namespace Carrion\Components;
 
-use App\Components\PostType;
-use App\Components\Component;
-use App\Traits\HasArgsAccessors;
+use Carrion\Components\PostType;
+use Carrion\Components\Component;
+use Carrion\Traits\HasArgsAccessors;
 use Error;
 
 final class Taxonomy extends Component 

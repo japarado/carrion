@@ -1,5 +1,5 @@
 <?php 
-namespace App\Constructs;
+namespace Carrion\Constructs;
 
 class Singleton
 {

@@ -1,7 +1,7 @@
 <?php 
-namespace App\Components;
+namespace Carrion\Components;
 
-use App\Components\Menu;
+use Carrion\Components\Menu;
 
 final class Topmenu extends Menu 
 {

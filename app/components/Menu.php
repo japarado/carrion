@@ -1,7 +1,7 @@
 <?php 
-namespace App\Components;
+namespace Carrion\Components;
 
-use App\Components\Component;
+use Carrion\Components\Component;
 
 abstract class Menu extends Component
 {

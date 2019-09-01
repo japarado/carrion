@@ -1,8 +1,8 @@
 <?php 
-namespace App\Components;
+namespace Carrion\Components;
 
-use App\Components\Component;
-use App\Traits\HasArgsAccessors;
+use Carrion\Components\Component;
+use Carrion\Traits\HasArgsAccessors;
 
 
 final class PostType extends Component
