@@ -79,7 +79,7 @@ final class PostType extends Component
         return array_key_exists('public', $this->getArgs());
     }
 
-    private function hasArchve()
+    private function hasArchive()
     {
         return array_key_exists('has_archive', $this->getArgs());
     }
