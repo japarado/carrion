@@ -79,6 +79,11 @@ final class PostType extends Component
         return array_key_exists('public', $this->getArgs());
     }
 
+    private function hasArchve()
+    {
+        return array_key_exists('has_archive', $this->getArgs());
+    }
+
     private function addToPostTypeCache()
     {
         static::$postTypeCache[$this->getName()] = $this->getName();
