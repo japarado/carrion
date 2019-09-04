@@ -31,6 +31,7 @@ final class PostType extends Component
     {
         $this->hasLabel() ?: $this->assignDefaultLabel();
         $this->isPublic() ?: $this->publicByDefault();
+        $this->hasArchive() ?: $this->hasArchiveByDefault();
         register_post_type($this->getName(), $this->getArgs());
     }
 
@@ -58,6 +59,13 @@ final class PostType extends Component
     {
         $args = $this->getArgs();
         $args['public'] = true;
+        $this->setArgs($args);
+    }
+
+    private function hasArchiveByDefault()
+    {
+        $args = $this->getArgs();
+        $args['has_archive'] = true;
         $this->setArgs($args);
     }
 
