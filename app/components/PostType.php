@@ -30,6 +30,7 @@ final class PostType extends Component
     public function loadCallback(): void
     {
         $this->hasLabel() ?: $this->assignDefaultLabel();
+        $this->isPublic() ?: $this->publicByDefault();
         register_post_type($this->getName(), $this->getArgs());
     }
 
@@ -53,14 +54,25 @@ final class PostType extends Component
         $this->setArgs($args);
     }
 
+    private function publicByDefault()
+    {
+        $args = $this->getArgs();
+        $args['public'] = true;
+        $this->setArgs($args);
+    }
+
     private function hasLabel()
     {
         return array_key_exists('label', $this->getArgs());
+    }
+
+    private function isPublic()
+    {
+        return array_key_exists('public', $this->getArgs());
     }
 
     private function addToPostTypeCache()
     {
         static::$postTypeCache[$this->getName()] = $this->getName();
     }
-
 }
