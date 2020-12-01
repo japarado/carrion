@@ -3,7 +3,7 @@ namespace Carrion\Components;
 
 use Carrion\Components\Menu;
 
-final class TopMenu extends Menu 
+final class Topmenu extends Menu 
 {
     public function __construct(string $page_title, string $menu_title, $callback = null, string $slug = '', string $capability = 'manage_options',
         string $menuIcon = '', int $position = 99)
